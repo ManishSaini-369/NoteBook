@@ -34,7 +34,7 @@ const Home = () => {
     if (currentUser === null || !currentUser) {
       navigate("/login")
     } else {
-      setUserInfo(currentUser?.rest)
+      setUserInfo(currentUser)
       getAllNotes()
     }
   }, [])
